@@ -22,9 +22,9 @@
 
     Crea també el mètode shapeName, que digui quina és la figura que ha sortit en l'última tirada de el dau en qüestió.
 
-    Crea finalment el mètode getTotalThrows que ha de mostrar el nombre total de tirades entre tots els daus
-
     Realitza una aplicació que permeti tirar cinc daus de pòquer alhora.
+
+    A més, programa el mètode getTotalThrows que ha de mostrar el nombre total de tirades entre tots els daus
 
 ## Nivell 3
 
@@ -33,9 +33,13 @@
     Crea un projecte Bancs, afegeix a el projecte una classe Account amb atributs per número de compte, nom i cognoms de el client i el saldo actual. Defineix en la classe els següents mètodes:
 
     Constructor que inicialitzi els atributs.
+
     Crea el mètode deposit($amount) que permet ingressar una quantitat al compte.
-    Crea el mètode withdraw($amount) que permet retirar una quantitat del compte sempre que hi hagi saldo, si no n'hi ha el mètode haurà de retornar un missatge d'error
+    
+    Crea el mètode withdraw($amount) que permet retirar una quantitat del compte sempre que hi hagi saldo, si no n'hi ha el mètode haurà de retornar un missatge d'error.
+
     Getters i Setters.
+
     Crea una petita interfície amb ajuda d'HTML I CSS que permeti ingressar una quantitat i dipositar o retirar el saldo del compte.
 
     Fes les validacions pertinents per assegurar que la quantitat ingressada per l'usuari és correcta.
