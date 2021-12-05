@@ -3,11 +3,10 @@
     include "Triangle.php";
     include "Rectangle.php";
 
-  
     if($argc == 4) {
         $width = $argv[2];
         $height = $argv[3];
-        //si la persona usuària introduieix un lletra en majúscula, la convertim a minúscula
+        //si la persona usuària introduieix una lletra en majúscula, la convertim a minúscula
         switch (strtolower($argv[1])) {
             case ('t'):
                 $triangle1 = new Triangle($width, $height);
@@ -19,8 +18,7 @@
                 break;
             }
     } else {
-        echo ("Per calcular l'area de una figura has d'introduir t (triangle) o r (rectangle)," . "\n");
-        echo ("el seu ample i el seu alt, separats per un espai en blanc" . "\n");
-        echo ("Per exemple: php Exercici2.php t 15 25". "\n");
+        echo ("Per calcular l'area d'una figura has d'introduir 't' (triangle) o 'r' (rectangle), el seu ample i la seva altura, separats per un espai en blanc. " . "\n");
+        echo ("Per exemple: php \"Nivell 1/Exercici2.php\" t 11 25". "\n");
     }
 ?>
