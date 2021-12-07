@@ -1,20 +1,30 @@
 <?php
     error_reporting(E_ALL);
     include 'PokerDice.php';
-    if($argc == 2) {
-        $totalThrows = $argv[1];
-        for ($i = 1; $i <= $totalThrows; $i++) {
-        //generem els 5 daus i els tirem tots alhora
-            for ($j = 1; $j <= 5; $j++) {
-                $dice = new PokerDice();
-                printf ($dice->shapeName($dice->throw()));
-            }
-            printf ("\n");
-        }
-        //mostra el nombre total de vegades que tires els 5 daus alhora
-        printf ($dice->getTotalThrows($totalThrows));
+
+     //nombre total de tirades entre tots els daus
+     function getTotalThrows($dice1, $dice2, $dice3, $dice4, $dice5) {
+        printf("Resultat de la tirada dels 5 daus alhora" . "\n");
+        print_r($dice1->shapeName($dice1->throw()));
+        print_r($dice2->shapeName($dice2->throw()));
+        print_r($dice3->shapeName($dice3->throw()));
+        print_r($dice4->shapeName($dice4->throw()));
+        print_r($dice5->shapeName($dice5->throw()));
+        print_r("\n");
+        
+    }
+
+     // generem els 5 daus
+     $dice1 = new PokerDice;
+     $dice2 = new PokerDice;
+     $dice3 = new PokerDice;
+     $dice4 = new PokerDice;
+     $dice5 = new PokerDice;
+
+    if($argc == 1) {
+        //els tirem
+       getTotalThrows($dice1, $dice2, $dice3, $dice4, $dice5);
     } else {
-        printf ("Per executar el programa has d'introduir quantes vegades vols tirar tots els daus alhora" . "\n");
-        printf ("Per exemple: php Exercici1.php 5" . "\n");
+        printf ("Per executar el programa has d'introduir: php \"Nivell 2/Exercici1.php\"" . "\n");
     }
 ?>

@@ -11,10 +11,5 @@ class PokerDice {
         $diceSides = array('1' => "As", '2' => "K", '3' => "Q", '4' => "J", '5' => "7", '6' => "8");
         return ($diceSides[$num]. " ");
     }
-
-    //nombre total de tirades entre tots els daus
-    function getTotalThrows($number) {
-        return ("Has tirat els daus " . $number . " vegades" . "\n");
-    }
 }
 ?>
