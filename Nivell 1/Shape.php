@@ -3,12 +3,12 @@
         //Atributs
         public $width;
         public $height;
-        //constructor
-        public function Shape($width, $height) {
+        //Constructor
+        public function __construct($width, $height) {
             $this->width = $width;
             $this->height = $height;
         }
-        //metode
+        //Metode
         public abstract function area();
     }
 ?>
